@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akshat Gupta — Computer Science undergraduate, aspiring Software & Web Developer. Portfolio showcasing projects, skills, and experience." />
+  <title>Akshat Gupta | Software Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">AG<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line">Akshat</span>
+        <span class="name-line accent">Gupta</span>
+      </h1>
+      <p class="hero-title">
+        <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-tagline">CS undergraduate building scalable web apps, REST APIs &amp; data-driven solutions.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="heroProjectsBtn">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="heroContactBtn">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:akshatmanug@gmail.com" class="social-icon" id="heroEmailLink" title="Email" target="_blank" rel="noopener">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/akshat-gupta-57855a294" class="social-icon" id="heroLinkedinLink" title="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Akshat-gupta-01" class="social-icon" id="heroGithubLink" title="GitHub" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 / intro</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a motivated <strong>Computer Science undergraduate</strong> and <strong>aspiring Software &amp; Web Developer</strong> with hands-on experience building REST APIs, Flask web applications, and data pipelines.</p>
+          <p>Proficient in <strong>Java, Python, SQL,</strong> and <strong>JavaScript</strong> with a strong foundation in Data Structures, Algorithms, and Object-Oriented Programming. Passionate about writing clean, efficient code and delivering user-focused software solutions.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">7.89</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="about-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-core">AG</div>
+            </div>
+            <div class="about-info-list">
+              <div class="about-info-item">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>Greater Noida, India</span>
+              </div>
+              <div class="about-info-item">
+                <i class="fa fa-graduation-cap"></i>
+                <span>B.Tech CSE — AKTU</span>
+              </div>
+              <div class="about-info-item">
+                <i class="fa fa-calendar"></i>
+                <span>Batch of 2027</span>
+              </div>
+              <div class="about-info-item">
+                <i class="fa fa-envelope"></i>
+                <span>akshatmanug@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 / expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-delay="0">
+          <div class="skill-cat-icon"><i class="fa fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="100">
+          <div class="skill-cat-icon"><i class="fa fa-layer-group"></i></div>
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Bootstrap 5</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Tkinter</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">pandas</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="200">
+          <div class="skill-cat-icon"><i class="fa fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="300">
+          <div class="skill-cat-icon"><i class="fa fa-tools"></i></div>
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">IntelliJ IDEA</span>
+            <span class="skill-tag">PyCharm</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="400">
+          <div class="skill-cat-icon"><i class="fa fa-brain"></i></div>
+          <h3>Core Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">OS</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">MVC Architecture</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="500">
+          <div class="skill-cat-icon"><i class="fa fa-cogs"></i></div>
+          <h3>Other</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">Code Review</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">NLP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 / work</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-role">Java Programming Intern</h3>
+                <p class="timeline-company">Vault Of Codes<span class="timeline-location"> · Remote</span></p>
+              </div>
+              <span class="timeline-date">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed scalable Java applications applying OOP, SOLID principles, and design patterns (Singleton, Factory, Observer), <strong>reducing code duplication by ~30%</strong>.</li>
+              <li>Optimised algorithms using data structures (HashMaps, Trees, Graphs), improving time complexity from <strong>O(n²) to O(n log n)</strong> on core processing tasks.</li>
+              <li>Built and documented RESTful APIs handling concurrent requests with proper exception handling, logging, and unit testing.</li>
+              <li>Collaborated in an Agile team: sprint planning, daily stand-ups, code reviews, and PR workflows using Git/GitHub.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Java</span><span>OOP</span><span>REST APIs</span><span>Agile</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="150">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-role">Python Programming Intern</h3>
+                <p class="timeline-company">CodSoft<span class="timeline-location"> · Remote</span></p>
+              </div>
+              <span class="timeline-date">Sep 2024 – Oct 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built Flask-based web applications with MySQL integration following MVC architecture, supporting role-based user flows.</li>
+              <li>Automated data pipelines using Python and pandas, <strong>reducing manual data-processing effort by 60%</strong>.</li>
+              <li>Applied ML models (classification, regression) using scikit-learn, achieving measurable accuracy improvements.</li>
+              <li>Improved application performance by <strong>40%</strong> through profiling, debugging, and code optimisation.</li>
+              <li>Built RESTful APIs for backend development with error handling and input validation.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>Flask</span><span>MySQL</span><span>pandas</span><span>scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 / builds</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card featured" id="projectLinkSnap" data-delay="0">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa fa-link"></i></div>
+            <div class="project-links">
+              <a href="https://url-sh-qr.netlify.app/" target="_blank" rel="noopener" title="Live Demo" class="project-link-btn">
+                <i class="fa fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">LinkSnap</h3>
+          <p class="project-subtitle">URL Shortener with QR Code Generator</p>
+          <p class="project-desc">Client-side URL shortener handling 100+ requests with QR code generation, click tracking, and local storage persistence. Implements QR encoding with error correction.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>QR API</span>
+          </div>
+        </article>
+
+        <article class="project-card featured" id="projectBulkBuy" data-delay="100">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa fa-shopping-cart"></i></div>
+            <div class="project-links">
+              <a href="https://bulkbuy-group-purchase-app.onrender.com/" target="_blank" rel="noopener" title="Live Demo" class="project-link-btn">
+                <i class="fa fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">BulkBuy</h3>
+          <p class="project-subtitle">Group Buying Web Application</p>
+          <p class="project-desc">Full-stack Flask web app for group purchasing with role-based dashboards, real-time cart management, and SQLAlchemy ORM-backed persistence.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Bootstrap</span>
+          </div>
+        </article>
+
+        <article class="project-card" id="projectDualWorld" data-delay="200">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa fa-moon"></i></div>
+            <div class="project-links">
+              <a href="https://dua-world.netlify.app/" target="_blank" rel="noopener" title="Live Demo" class="project-link-btn">
+                <i class="fa fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Dual World</h3>
+          <p class="project-subtitle">Two Worlds. One Click.</p>
+          <p class="project-desc">Responsive SPA with dual theme: normal and dark/glitchy aesthetic. Smooth CSS variable theme switching with localStorage persistence.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card" id="projectDevMatch" data-delay="300">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa fa-users"></i></div>
+            <div class="project-links">
+              <a href="https://dev-match-web.netlify.app/" target="_blank" rel="noopener" title="Live Demo" class="project-link-btn">
+                <i class="fa fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">DevMatch</h3>
+          <p class="project-subtitle">Developer Collaboration Platform</p>
+          <p class="project-desc">Scalable full-stack platform enabling developers to connect, collaborate, and form project teams. JWT auth, profile management, and skill-based matching.</p>
+          <div class="project-tech">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>Firebase</span>
+          </div>
+        </article>
+
+        <article class="project-card" id="projectBankSystem" data-delay="400">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa fa-university"></i></div>
+          </div>
+          <h3 class="project-title">Basic Bank Management System</h3>
+          <p class="project-subtitle">Desktop GUI Application</p>
+          <p class="project-desc">Python GUI application supporting account operations and full transaction history management with Tkinter frontend.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Tkinter</span>
+          </div>
+        </article>
+
+        <article class="project-card" id="projectHotelBooking" data-delay="500">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa fa-hotel"></i></div>
+          </div>
+          <h3 class="project-title">Hotel Booking System</h3>
+          <p class="project-subtitle">Java Console Application</p>
+          <p class="project-desc">Console-based booking system using OOP principles and file handling for complete booking lifecycle management.</p>
+          <div class="project-tech">
+            <span>Java</span><span>OOP</span><span>File I/O</span>
+          </div>
+        </article>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/Akshat-gupta-01" target="_blank" rel="noopener" class="btn btn-outline" id="viewMoreGithubBtn">
+          <i class="fab fa-github"></i> View More on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HACKATHONS ===== -->
+  <section class="section" id="hackathons">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">05 / compete</span>
+        <h2 class="section-title">Hackathons</h2>
+      </div>
+      <div class="hackathon-grid">
+
+        <div class="hackathon-card" data-delay="0">
+          <div class="hackathon-badge"><i class="fa fa-trophy"></i></div>
+          <div class="hackathon-info">
+            <h3>AKTU AI Tech Hackathon 2025</h3>
+            <p class="hackathon-org">Dr. A.P.J. Abdul Kalam Technical University</p>
+            <span class="hackathon-date"><i class="fa fa-calendar-alt"></i> March 2025</span>
+            <ul class="hackathon-bullets">
+              <li>Developed an AI-based solution using Python and ML models within 24 hours.</li>
+              <li>Integrated NLP features and collaborated in a team of four.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hackathon-card" data-delay="150">
+          <div class="hackathon-badge"><i class="fa fa-laptop-code"></i></div>
+          <div class="hackathon-info">
+            <h3>Web Development Hackathon</h3>
+            <p class="hackathon-org">Industry Hackathon Event</p>
+            <span class="hackathon-date"><i class="fa fa-calendar-alt"></i> July 2025</span>
+            <ul class="hackathon-bullets">
+              <li>Built a full-stack web application with authentication and responsive UI.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">06 / academics</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-grid">
+
+        <div class="edu-card" data-delay="0">
+          <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <h3>Bachelor of Technology — Computer Science &amp; Engineering</h3>
+            <p class="edu-institution">Dr. A.P.J. Abdul Kalam Technical University</p>
+            <div class="edu-meta">
+              <span><i class="fa fa-map-marker-alt"></i> Greater Noida, India</span>
+              <span><i class="fa fa-calendar"></i> Oct 2023 – Jun 2027</span>
+            </div>
+            <div class="edu-highlight">
+              <i class="fa fa-star"></i> CGPA: <strong>7.892 / 10</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card" data-delay="150">
+          <div class="edu-icon"><i class="fa fa-school"></i></div>
+          <div class="edu-content">
+            <h3>School Education — Class 7 to 12</h3>
+            <p class="edu-institution">Jawahar Navodaya Vidyalaya (JNV)</p>
+            <div class="edu-meta">
+              <span><i class="fa fa-map-marker-alt"></i> Ayodhya, India</span>
+              <span><i class="fa fa-calendar"></i> Jul 2017 – Mar 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">07 / credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-delay="0"><i class="fa fa-certificate"></i><span>HCL Front-End Web Development — NSDC</span></div>
+        <div class="cert-card" data-delay="60"><i class="fab fa-aws"></i><span>Solutions Architecture Job Simulation — Amazon AWS (Forage)</span></div>
+        <div class="cert-card" data-delay="120"><i class="fa fa-shield-alt"></i><span>Cyber Security Job Simulation — Deloitte (Forage)</span></div>
+        <div class="cert-card" data-delay="180"><i class="fa fa-database"></i><span>30 Days Micro SQL Course — Skill Course</span></div>
+        <div class="cert-card" data-delay="240"><i class="fab fa-python"></i><span>Python Basics — Uniathena (CIQ)</span></div>
+        <div class="cert-card" data-delay="300"><i class="fa fa-robot"></i><span>ChatGPT &amp; AI Tools Workshop — be10x</span></div>
+        <div class="cert-card" data-delay="360"><i class="fa fa-leaf"></i><span>MongoDB Schema Design Optimization Skill Badge — MongoDB</span></div>
+        <div class="cert-card" data-delay="420"><i class="fab fa-css3-alt"></i><span>CSS (Basics) — HackerRank</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">08 / connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p>I'm currently open to new opportunities — whether it's a full-time role, internship, or an exciting collaboration. Drop me a message!</p>
+          <div class="contact-links">
+            <a href="mailto:akshatmanug@gmail.com" class="contact-link-item" id="contactEmailLink">
+              <div class="contact-link-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">akshatmanug@gmail.com</span>
+              </div>
+              <i class="fa fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akshat-gupta-57855a294" target="_blank" rel="noopener" class="contact-link-item" id="contactLinkedinLink">
+              <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">akshat-gupta-57855a294</span>
+              </div>
+              <i class="fa fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://github.com/Akshat-gupta-01" target="_blank" rel="noopener" class="contact-link-item" id="contactGithubLink">
+              <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">Akshat-gupta-01</span>
+              </div>
+              <i class="fa fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="tel:+919140559765" class="contact-link-item" id="contactPhoneLink">
+              <div class="contact-link-icon"><i class="fa fa-phone"></i></div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 91405 59765</span>
+              </div>
+              <i class="fa fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">AG<span class="dot">.</span></span>
+      <p class="footer-copy">Designed &amp; Built by <strong>Akshat Gupta</strong> · 2026</p>
+      <div class="footer-socials">
+        <a href="mailto:akshatmanug@gmail.com" target="_blank" rel="noopener"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/akshat-gupta-57855a294" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Akshat-gupta-01" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
