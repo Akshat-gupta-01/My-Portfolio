@@ -48,11 +48,12 @@ The portfolio features a modern UI, smooth animations, and interactive elements 
 ---
 
 ## 📂 Project Structure
+```
 portfolio/
 │── index.html
 │── styles.css
 │── script.js
-
+```
 
 ---
 
@@ -98,10 +99,11 @@ portfolio/
 ---
 
 ## ⚙️ Run Locally
-- git clone https://github.com/your-username/portfolio.git
-- cd portfolio
-- open index.html
-
+```
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+open index.html
+```
 
 ---
 
